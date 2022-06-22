@@ -1,0 +1,418 @@
+@media (max-width: 1600px) {
+	.season-collection__items {
+		padding-left: 30px;
+	}
+
+	.season-collection__item+.season-collection__item {
+		margin-left: 30px;
+	}
+}
+
+@media (max-width: 1430px) {
+
+	.collection__row:nth-child(1) {
+		flex-wrap: wrap;
+	}
+
+	.collection__season {
+		margin-top: 30px;
+	}
+
+	.season-collection__items {
+		justify-content: center;
+		padding-left: 0;
+		margin-bottom: 30px;
+	}
+
+	.catalog-new-collection {
+		max-width: 100%;
+		justify-content: center;
+		height: 600px;
+	}
+}
+
+@media (max-width:1090px) {
+	.footer {
+		&__top {
+			padding: 40px 0 20px;
+			background-size: cover;
+		}
+
+		&__title {
+			margin-bottom: 20px;
+		}
+
+		&__row {
+			flex-wrap: wrap;
+			gap: 30px;
+		}
+
+		&__about-us {
+			flex: 1 1 30%;
+			margin-right: 0;
+		}
+
+		&__categories {
+			flex: 1 1 30%;
+			margin-right: 0;
+		}
+	}
+
+	.footer__text {
+		width: 100%;
+	}
+}
+
+//1024px
+@media screen and (max-width: 1024px) {
+	.intro {
+		height: 600px;
+
+		&__logo {
+			height: 260px;
+			margin-bottom: 60px;
+		}
+
+	}
+
+	.new-arrivals__items {
+		justify-content: center;
+	}
+
+
+}
+
+//992px
+@media (max-width: 992px) {
+	.season-collection__items {
+		padding: 0 20px;
+		flex-wrap: wrap;
+	}
+
+	.season-collection__item-img {
+		max-width: 200px;
+		padding: 30px 15px;
+	}
+}
+
+//768px
+@media screen and (max-width: 768px) {
+	.header {
+
+		&__contact,
+		&__schedule,
+		&__schedule-text {
+			border-right: none;
+
+			img {
+				margin-right: 10px;
+			}
+		}
+
+		&__link {
+			padding: 20px 5px;
+		}
+	}
+
+	.header__nav {
+		display: none;
+	}
+
+	.nav-btn {
+		display: block;
+	}
+
+	.mobile-nav-active {
+		display: flex;
+		max-height: 100%;
+		visibility: visible;
+		top: 50px;
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	.new-arrivals {
+		padding: 60px 0;
+	}
+
+	.new-arrivals__title {
+		font-size: 26px;
+		margin-bottom: 50px;
+
+		&::after {
+			bottom: -20px;
+		}
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.season-collection__item {
+		flex: 1 1 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin-bottom: 40px;
+		font-size: 16px;
+	}
+
+	.season-collection__item-img {
+		padding: 20px 10px;
+		margin-bottom: 10px;
+	}
+
+	.season-collection__item+.season-collection__item {
+		margin-left: 0;
+	}
+
+	.catalog-new-collection {
+		height: 400px;
+
+		&__title {
+			font-size: 24px;
+			margin-bottom: 30px;
+
+			&::after {
+				bottom: -10px;
+			}
+		}
+
+		&__btn {
+			height: 40px;
+			font-size: 18px;
+		}
+	}
+
+	.season-collection__title {
+		font-size: 26px;
+		margin-bottom: 40px;
+
+		&::after {
+			bottom: -10px;
+		}
+	}
+
+	.catalog-collection-old {
+		height: 450px;
+	}
+
+	.catalog-collection-old-desc {
+		padding-top: 20px;
+		height: 450px;
+		padding-bottom: 20px;
+
+	}
+
+	.catalog-collection-old-desc__title {
+		font-size: 24px;
+		margin-bottom: 30px;
+
+		&::after {
+			bottom: -10px;
+		}
+	}
+
+	.catalog-collection-old-desc__text {
+		margin-bottom: 15px;
+
+	}
+
+	.catalog-collection-old-desc__link {
+		max-width: 300px;
+		height: 40px;
+		font-size: 16px;
+	}
+}
+
+//630px
+@media screen and (max-width:630px) {
+	body {
+		padding-top: 90px;
+	}
+
+	.header {
+
+		&__contact,
+		&__schedule,
+		&__schedule-text {
+			border-right: none;
+
+			img {
+				margin-right: 10px;
+			}
+		}
+
+		&__top {
+
+			.header__schedule,
+			.header__schedule-text {
+				display: none;
+			}
+		}
+
+		&__btns {
+			button+button {
+				margin-left: 20px;
+			}
+
+			+.nav-btn {
+
+				margin-left: 30px;
+			}
+		}
+	}
+
+	.header__bottom .header__row {
+		height: 50px;
+	}
+
+	.logo {
+		font-size: 30px;
+	}
+
+	.mobile-nav__item {
+
+		.header__schedule,
+		.header__schedule-text {
+			margin-top: 20px;
+			display: inline-block;
+		}
+	}
+
+	.new-arrivals__items {
+		gap: 30px 20px;
+	}
+
+	.new-arrivals__item {
+		max-width: 200px;
+		font-size: 16px;
+
+		&-img {
+			padding: 30px 10px;
+			margin-bottom: 15px;
+		}
+
+		p+p {
+			margin-top: 5px;
+		}
+	}
+
+	.our-brands {
+		padding: 30px 0 30px;
+
+		&__title {
+			font-size: 24px;
+			margin-bottom: 30px;
+
+			&::after {
+				bottom: -20px;
+			}
+		}
+	}
+
+	.footer {
+		&__about-us {
+			flex: 1 1 auto;
+		}
+
+		&__categories {
+			flex: 1 1 auto;
+		}
+	}
+}
+
+@media screen and (max-width:550px) {
+	.collection__row {
+		flex-wrap: wrap;
+		gap: 0;
+	}
+
+	.catalog-collection-old-desc__link {
+		font-size: 14px;
+		padding: 10px;
+	}
+
+	.catalog-collection-old {
+		margin-top: 50px;
+		height: 200px;
+	}
+
+	.catalog-collection-old-desc {
+		height: auto;
+		padding-top: 0;
+	}
+
+	.catalog-new-collection {
+		height: 250px;
+		padding-bottom: 0;
+	}
+
+
+}
+
+//500px
+@media screen and (max-width:500px) {
+	.intro {
+		height: 500px;
+
+		&__logo {
+			max-width: 280px;
+			height: 200px;
+			margin-bottom: 40px;
+		}
+
+		&__subtitle {
+			font-size: 14px;
+		}
+	}
+
+	.footer {
+		&__title {
+			font-size: 20px;
+		}
+
+		&__text {
+			font-size: 14px;
+		}
+
+		&__row {
+			gap: 30px 0px;
+		}
+
+		&__email {
+			width: 150px;
+			height: 35px;
+		}
+
+		&__btn-sub {
+			height: 35px;
+		}
+	}
+}
+
+//360px
+@media screen and (max-width:360px) {
+
+	.header {
+
+		&__contact,
+		&__schedule,
+		&__schedule-text {
+			font-weight: 400;
+			margin-right: 0;
+			padding: 0;
+
+			img {
+				margin-right: 5px;
+			}
+		}
+
+		&__login {
+			font-size: 12px;
+
+			img {
+				margin-right: 5px;
+			}
+		}
+	}
+}

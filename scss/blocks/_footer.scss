@@ -1,0 +1,173 @@
+.footer {
+
+	color: #fff;
+
+	// .footer__container
+	&__top {
+		padding: 80px 0 90px;
+		background-image: url("../img/footer.png");
+		background-repeat: no-repeat;
+	}
+
+	&__container {}
+
+	// .footer__row
+	&__copy {
+		height: 50px;
+		font-family: 'PT Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		color: $light-gray;
+
+		.footer__container {
+			height: 100%;
+		}
+	}
+
+	&__row {
+		display: flex;
+		align-items: flex-start;
+
+		&-copy {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 100%;
+		}
+	}
+
+	// .footer__about-us
+
+	&__about-us {
+		margin-right: 30px;
+	}
+
+	// .footer__title
+
+	&__title {
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+
+	// .footer__text
+
+	&__text {
+		max-width: 350px;
+		width: 350px;
+		font-family: 'PT Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.5;
+		color: #FFFFFF;
+
+		+form {
+			margin-top: 37px;
+		}
+	}
+
+	// .footer__categories
+
+	&__categories {}
+
+	// .footer__mailing
+
+	&__mailing {}
+
+	&__email {
+		width: 210px;
+		height: 42px;
+		padding: 10px 15px;
+		font-family: 'PT Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.5;
+		color: $light-gray;
+		background: rgba(255, 255, 255, 0.4);
+		transition: all .3s ease-out;
+
+		&::placeholder {
+			color: $light-gray;
+		}
+
+		&:hover {
+			background: rgba(255, 255, 255, 0.2);
+		}
+
+		&:focus {
+			background: rgba(227, 227, 227, 0.5);
+			color: #fff;
+			transform: scale(1.05);
+
+			&::placeholder {
+				color: rgb(176, 168, 168);
+			}
+		}
+	}
+
+	&__btn-sub {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 10px 20px;
+		width: 140px;
+		height: 41px;
+		font-family: 'PT Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.5;
+		letter-spacing: 0.05em;
+		color: #FFFFFF;
+		background: #0F0F0F;
+		transition: all .3s ease-out;
+
+		&:hover {
+			background: #262525;
+			border-radius: 5px;
+			color: $light-gray;
+		}
+	}
+}
+
+
+.footer-categories {
+	margin-right: 30px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.footer-category {
+	flex: 0 1 auto;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	height: 41px;
+	background: #0F0F0F;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.5;
+	color: $light-gray;
+	transition: all .3s ease-out;
+
+	&:hover {
+		background: #262525;
+		border-radius: 5px;
+		color: $light-gray;
+	}
+}

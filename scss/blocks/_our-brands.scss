@@ -1,0 +1,48 @@
+.our-brands {
+	background: #0F0F0F;
+	padding: 60px 0 80px;
+	// .our-brands__container
+
+	&__container {}
+
+	// .our-brands__title
+
+	&__title {
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 36px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		position: relative;
+		margin-bottom: 80px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -40px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			width: 120px;
+			height: 1px;
+			background-color: #fff;
+		}
+	}
+
+	// .our-brands__row
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 20px 25px;
+	}
+
+	// .our-brands__brand
+
+	&__brand {
+		flex: 0 0 auto;
+	}
+}

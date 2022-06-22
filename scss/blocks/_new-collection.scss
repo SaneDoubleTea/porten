@@ -1,0 +1,239 @@
+.collection {
+	background-color: #000;
+
+
+
+	&__row {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	&__season {
+		flex: 1 1 auto;
+	}
+
+	&__catalog {
+		flex: 1 1 auto;
+	}
+}
+
+.season-collection {
+	height: 730px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+
+	&__title {
+		position: relative;
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 48px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin-bottom: 100px;
+
+		&::after {
+			position: absolute;
+			content: '';
+			bottom: -50px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			width: 120px;
+			height: 1px;
+			background-color: #fff;
+		}
+	}
+
+	&__items {
+		display: flex;
+		align-items: center;
+		padding-left: 80px;
+	}
+
+	&__item {
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		color: #FFFFFF;
+		transition: all .3s ease-out;
+
+		img {
+			transition: all .3s ease-out;
+		}
+
+		&:hover {
+			text-decoration: underline;
+
+			img {
+				transform: scale(1.1);
+			}
+		}
+
+		+.season-collection__item {
+			margin-left: 50px;
+		}
+
+		&-img {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			max-width: 260px;
+			width: 100%;
+			margin-bottom: 25px;
+			padding: 55px 22px;
+			background-color: $black;
+			overflow: hidden;
+		}
+
+		p+p {
+			margin-top: 10px;
+		}
+	}
+}
+
+.catalog-new-collection {
+	max-width: 880px;
+	width: 100%;
+	height: 730px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	padding-bottom: 100px;
+	background-image: url('../../img/new-collection.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__title {
+		position: relative;
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 48px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		margin-bottom: 60px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -30px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			width: 120px;
+			height: 1px;
+			background: #fff;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 12px 28px;
+		max-width: 138px;
+		width: 100%;
+		height: 47px;
+		border: 1px solid #FFFFFF;
+		font-family: 'PT Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 23px;
+		letter-spacing: 0.1em;
+		color: #fff;
+		text-transform: uppercase;
+		background-color: transparent;
+		transition: all .2s ease-out;
+
+		&:hover {
+			transform: scale(1.025);
+		}
+	}
+}
+
+.catalog-collection-old {
+	flex: 1 1 880px;
+	height: 600px;
+	background-image: url('../../img/collection-2018.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.catalog-collection-old-desc {
+	flex: 1 1 1040px;
+	height: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	&__title {
+		position: relative;
+		margin-bottom: 80px;
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 48px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -40px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			width: 120px;
+			height: 1px;
+			background: #fff;
+		}
+	}
+
+	&__text {
+		max-width: 470px;
+		margin-bottom: 60px;
+		font-family: 'PT Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.5;
+		text-align: center;
+		color: #FFFFFF;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 12px 28px;
+		max-width: 320px;
+		width: 100%;
+		height: 47px;
+		border: 1px solid #FFFFFF;
+		font-family: 'PT Sans';
+		font-weight: 400;
+		font-size: 18px;
+		text-align: center;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+
+		&:hover {
+			text-decoration: underline;
+			color: rgb(216, 216, 216);
+		}
+	}
+}

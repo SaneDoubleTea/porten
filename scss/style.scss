@@ -1,0 +1,75 @@
+/* ===========reset styles===========*/
+@import "blocks/reset";
+/* vars */
+@import "blocks/vars";
+
+/* ===========FONTS========== */
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:regular);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,700);
+@import url(http://fonts.cdnfonts.com/css/post-no-bills-jaffna);
+
+@font-face {
+	font-family: 'PostNoBills';
+	font-style: normal;
+	font-weight: 700;
+	src: local('PostNoBills'),
+		url("../fonts/PostNoBillsJaffna-Bold.woff") format("woff");
+}
+
+._container {
+	max-width: 1125px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container-wide {
+	max-width: 1935px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+// font-family: 'Playfair Display',
+// serif;
+// font-family: 'PT Sans',
+// sans-serif;
+body {
+	padding-top: 120px;
+	font-family: 'PT Sans';
+	background-color: #000;
+}
+
+.logo {
+	font-family: 'Post No Bills Jaffna SemiBold',
+		sans-serif;
+	font-style: normal;
+	font-size: 38px;
+	line-height: 1.5;
+	color: #FFFFFF;
+
+	a {
+		color: inherit;
+	}
+}
+
+@import "blocks/header";
+//burger menu
+@import "blocks/burger-menu";
+
+@import "blocks/intro";
+
+@import "blocks/new-collection";
+
+
+@import "blocks/new-arrivals";
+
+
+
+
+@import "blocks/our-brands";
+
+
+@import "blocks/footer";
+
+
+
+@import 'blocks/media';
