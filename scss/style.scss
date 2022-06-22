@@ -6,14 +6,12 @@
 /* ===========FONTS========== */
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:regular);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,700);
-@import url(http://fonts.cdnfonts.com/css/post-no-bills-jaffna);
 
 @font-face {
 	font-family: 'PostNoBills';
 	font-style: normal;
 	font-weight: 700;
-	src: local('PostNoBills'),
-		url("../fonts/PostNoBillsJaffna-Bold.woff") format("woff");
+	src: local('../fonts/PostNoBillsJaffna-Bold.woff'), url('../fonts/PostNoBillsJaffna-Bold.woff') format('woff');
 }
 
 ._container {
@@ -39,9 +37,9 @@ body {
 }
 
 .logo {
-	font-family: 'Post No Bills Jaffna SemiBold',
-		sans-serif;
+	font-family: 'PostNoBills';
 	font-style: normal;
+	font-weight: 700;
 	font-size: 38px;
 	line-height: 1.5;
 	color: #FFFFFF;
